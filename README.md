@@ -1,17 +1,15 @@
-# Audit Financiar - Simularea Integrității Datelor prin SQL
+# Sistem Automatizat de Audit Financiar - SQL & Python
 
 ### Descrierea Proiectului
-Am construit o bază de date pentru tranzacții financiare în MySQL pentru a testa capacitatea de identificare a anomaliilor de sistem prin interogări SQL.
+Am construit o soluție de audit care combină SQL pentru gestionarea datelor și Python pentru automatizarea raportării. Proiectul identifică automat erorile de sistem și generează rapoarte livrabile pentru business.
 
 ### Scenarii de Audit Verificate
-Am implementat scripturi pentru a extrage automat următoarele tipuri de excepții:
-* **Erori de autorizare:** Identificarea tranzacțiilor cu valori 'NULL' sau 'ERROR' (procesări eșuate).
-* **Tranzacții de risc:** Filtrarea sumelor mari provenite din jurisdicții specifice (ex: Insulele Cayman).
-* **Integritatea datelor:** Verificarea structurii corecte a tabelului și popularea cu date de test.
+* **Erori de autorizare:** Detectarea valorilor 'NULL' sau 'ERROR' în tranzacții.
+* **Integritatea datelor:** Verificarea automată a fluxurilor financiare suspecte.
 
 ### Tehnologii
-* **MySQL Server 8.0**
-* **MySQL Workbench**
-
+* **SQL (MySQL)**: Stocarea și interogarea datelor.
+* **Python**: Automatizarea procesului și conectarea la baza de date.
+  
 ### Rezultate
-Proiectul demonstrează utilizarea clauzelor 'WHERE', 'AND' și 'OR' pentru a genera rapoarte de excepție necesare în verificarea conformității datelor financiare.
+* **Automatizarea**: Eliminarea rulării manuale a interogărilor prin scriptul Python.
