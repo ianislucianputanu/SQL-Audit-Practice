@@ -20,9 +20,10 @@ try:
             print(f"ID: {rand[0]} | Client: {rand[1]} | Suma: {rand[2]} | Status: {rand[5]}")
 
 except Exception as e:
-    print(f"Eroare la conectare: {e}")
+    print("A aparut o eroare de conexiune. Verific datele serverului.")
 
 finally:
     if 'conexiune' in locals() and conexiune.is_connected():
         cursor.close()
         conexiune.close()
+
